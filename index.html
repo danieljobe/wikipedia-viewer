@@ -1,0 +1,39 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+    <!-- Body container -->
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2 class="form-signin-heading">Wikipedia Viewer</h2>
+                <br><br>
+        <!-- Main Wikipedia logo -->
+            <div class="text-center">
+                <img class="img" id="wikilogo" src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png" alt="wikipedia logo">
+            </div>
+            <br><br>
+            </div>
+        
+            <div class="text-center">
+                <input type="text" id="searchTerm" style="width:30%" placeholder="Results from wikipedia.org">
+            </div>
+            <br>
+            <div class="text-center">
+                <button class="btn btn-xs btn-primary" id="submitButton" onclick="search()">Search</button>   
+                <button class="btn btn-xs btn-primary" onclick="randomArticle()">Random Article</button>
+            </div>
+        <br><br>
+        </div> <!-- /container -->
+        <div id="searchResults">
+        <br>
+        </div>
+        <br>
+    </body>
+</html>
